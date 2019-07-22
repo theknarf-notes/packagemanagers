@@ -1,0 +1,16 @@
+{
+  "name": "note-packagemanagers",
+  "private": "true",
+  "scripts": {
+    "build": "ravendesk build",
+    "dev": "ravendesk dev",
+    "deploy": "yarn run build && gh-pages --dist dist/ --branch gh-pages"
+  },
+  "author": "Frank Lyder Bredland <fl@nyggen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@ravendesk/cli": "./packages/ravendesk-cli",
+    "@ravendesk/preset-blog": "./packages/ravendesk-preset-blog",
+    "gh-pages": "^2.0.1"
+  }
+}
